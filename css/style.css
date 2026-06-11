@@ -103,6 +103,10 @@
     line-height: 1.6;
     font-size: 17px;
 }
+.about_me span{
+    color: rgb(196, 208, 236);
+    font-weight: bold;
+}
 .experience{
     width: 100%;
     height: auto;
@@ -167,6 +171,10 @@
 .example:hover span{
     padding: 0 0 10px 5px;
     transition: 0.15s;
+}
+.experience h2:hover span{
+    margin-left: 5px;
+    transition: 0.3s;
 }
 
 
