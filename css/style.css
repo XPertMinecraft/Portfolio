@@ -1,18 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.box{
+
+.box {
     width: 100%;
     height: auto;
     display: flex;
     background: rgb(15, 23, 42);
     color: white;
-    padding: 100px 200px 100px 200px;
+    /* padding: 100px 200px 100px 200px; */
+    padding: 10vh 10vw 10vh 10vw;
     font-family: Arial, sans-serif;
 }
-.left_block{
+
+.left_block {
     width: 50%;
     height: calc(100vh - 200px);
     color: rgb(126, 146, 184);
@@ -21,27 +24,39 @@
     justify-content: space-between;
     overflow: hidden;
     position: fixed;
+    z-index: 1;
 }
-.left_text{
+
+.left_text {
     width: 100%;
     height: 50%;
 }
-.left_block h1{
-    font-size: 60px;
-    height: 60px;
+
+.left_text a{
+    width: 19%;
+}
+
+.left_block h1 {
+    max-width: 80%;
+    font-size: clamp(1rem, 5vw, 4rem);
+    height: auto;
     color: rgb(196, 208, 236);
 }
-.left_block h3{
-    font-size: 23px;
+
+.left_block h3 {
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
     height: 30px;
     color: rgb(197, 209, 236);
 }
-.left_text_p{
-    margin-bottom: 60px;
+
+.left_text_p {
+    margin-bottom: 8vh;
+    height: auto;
     font-size: 19px;
     line-height: 1.4;
 }
-.social_media{
+
+.social_media {
     width: 100%;
     height: 5%;
     display: flex;
@@ -49,11 +64,13 @@
     align-items: center;
     gap: 20px;
 }
-.social_media a:hover svg{
+
+.social_media a:hover svg {
     fill: rgb(84, 211, 212);
 }
-.section{
-    width: 25%;
+
+.section {
+    width: 100%;
     height: 50px;
     display: flex;
     justify-content: flex-start;
@@ -63,35 +80,42 @@
     font-weight: bold;
     cursor: pointer;
 }
-.section hr{
+
+.section hr {
     width: 15%;
     border: 0.1px solid rgba(91, 111, 148);
     transition: 0.3s;
 }
-.section:hover{
+
+.section:hover {
     color: white;
 }
-.section:hover hr{
+
+.section:hover hr {
     width: 35%;
     border-color: white;
     border-width: 1px;
 }
-.right_block{
+
+.right_block {
     width: 50%;
     height: auto;
     display: flex;
     flex-direction: column;
     color: rgb(141, 159, 186);
-    transform: translateX(100%);
+    margin-left: auto;
+    z-index: 1;
 }
-.about{
+
+.about {
     width: 91%;
     height: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.about_me{
+
+.about_me {
     width: 100%;
     height: auto;
     display: flex;
@@ -99,22 +123,26 @@
     gap: 20px;
     margin-bottom: 150px;
 }
-.about_me p{
+
+.about_me p {
     line-height: 1.6;
-    font-size: 17px;
+    font-size: clamp(0.5rem, 1vw, 2rem);
 }
-.about_me span{
+
+.about_me span {
     color: rgb(196, 208, 236);
     font-weight: bold;
 }
-.experience{
+
+.experience {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.example{
+
+.example {
     width: 100%;
     height: auto;
     display: flex;
@@ -125,34 +153,41 @@
     transition: 0.3s;
     cursor: pointer;
 }
-.example:hover{
+
+.example:hover {
     background: rgba(23, 31, 50);
 }
-.example:hover h3{
+
+.example:hover h3 {
     color: rgb(81, 201, 205);
 }
-.date{
+
+.date {
     width: 20%;
     height: 100%;
     font-size: 13px;
 }
-.example h3{
+
+.example h3 {
     margin-bottom: 10px;
     color: rgb(196, 208, 236);
 }
-.example p{
+
+.example p {
     width: 80%;
     font-size: 14px;
     margin-bottom: 15px;
     line-height: 1.4;
 }
-.prog_lang{
+
+.prog_lang {
     width: 80%;
     height: auto;
     display: flex;
     gap: 10px;
 }
-.lang{
+
+.lang {
     width: auto;
     padding: 7px 13px 7px 13px;
     background: rgba(18, 43, 57);
@@ -160,30 +195,68 @@
     color: rgba(94, 234, 207);
     font-size: 13px;
 }
-.experience h2{
+
+.experience h2 {
     font-size: 17px;
     color: white;
     cursor: pointer;
 }
-.experience h2:hover{
+
+.experience h2:hover {
     color: rgba(94, 234, 207);
 }
-.example:hover span{
+
+.example:hover span {
     padding: 0 0 10px 5px;
     transition: 0.15s;
 }
-.experience h2:hover span{
+
+.experience h2:hover span {
     margin-left: 5px;
     transition: 0.3s;
 }
 
-
-
-
-
-
-a{
+a {
     text-decoration: none;
     color: rgb(126, 146, 184);
     display: flex;
+}
+
+.shiny_block {
+    width: 700px;
+    height: 700px;
+    border-radius: 100%;
+    background: rgb(15, 23, 42);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 30%;
+}
+
+.shiny_block {
+    margin: 40px auto;
+    border-radius: 100%;
+}
+
+.shiny_block::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    z-index: -1;
+    background: linear-gradient(135deg, rgb(38, 68, 144), rgb(15, 23, 42));
+    filter: blur(100px);
+    opacity: 0.7;
+    border-radius: 100%;
+}
+
+.section.active{
+    color: white;
+}
+.section.active hr{
+    width: 35%;
+    border-color: white;
+    border-width: 1px;
 }
