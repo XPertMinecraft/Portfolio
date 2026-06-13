@@ -6,8 +6,8 @@ const exp = document.getElementById("exp");
 let expTop = exp.offsetTop;
 
 document.addEventListener("mousemove", (event) => {
-    shiny.style.left = event.clientX - 350 + "px";
-    shiny.style.top = event.clientY - 350 + "px";
+    shiny.style.left = event.clientX + "px";
+    shiny.style.top = event.clientY + "px";
 });
 
 window.onscroll = ()=>{
