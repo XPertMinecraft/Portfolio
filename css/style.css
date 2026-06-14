@@ -22,7 +22,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
     position: fixed;
     z-index: 1;
 }
@@ -33,12 +32,12 @@
 }
 
 .left_text a{
-    width: 9.3vw;
+    width: 10vw;
 }
 
 .left_block h1 {
     max-width: 80%;
-    font-size: clamp(0.1rem, 5vw, 4rem);
+    font-size: clamp(0.1rem, 4vw, 4rem);
     height: auto;
     color: rgb(196, 208, 236);
     min-height: 5vw;
@@ -46,7 +45,7 @@
 }
 
 .left_block h3 {
-    font-size: clamp(0.1rem, 2vw, 1.5rem);
+    font-size: clamp(0.1rem, 1.5vw, 2rem);
     height: 2vw;
     color: rgb(197, 209, 236);
 }
@@ -54,7 +53,7 @@
 .left_text_p {
     margin-bottom: 8vh;
     height: auto;
-    font-size: clamp(0.1rem, 2vw, 1.3rem);
+    font-size: clamp(0.1rem, 1.3vw, 1.3rem);
     line-height: 1.4;
 }
 
@@ -78,14 +77,14 @@
     justify-content: flex-start;
     align-items: center;
     gap: 1.5vw;
-    font-size: clamp(0.1rem, 1vw, 0.8rem);
+    font-size: clamp(0.1rem, 0.8vw, 0.8rem);
     font-weight: bold;
     cursor: pointer;
 }
 
 .section hr {
     width: 15%;
-    border: 0.1px solid rgba(91, 111, 148);
+    border: 0.01vw solid rgba(91, 111, 148);
     transition: 0.3s;
 }
 
@@ -96,7 +95,7 @@
 .section:hover hr {
     width: 35%;
     border-color: white;
-    border-width: 1px;
+    border-width: 0.05vw;
 }
 
 .right_block {
@@ -184,7 +183,7 @@
 
 .example p {
     width: 29.5vw;
-    font-size: clamp(0.1rem, 2vw, 0.9rem);
+    font-size: clamp(0.1rem, 1vw, 0.9rem);
     margin-bottom: 1.5vw;
     line-height: 1.4;
 }
@@ -266,5 +265,21 @@ a {
 .section.active hr{
     width: 35%;
     border-color: white;
-    border-width: 1px;
+    border-width: 0.05vw;
+}
+
+.ukraine{
+    width: 3vw;
+    position: absolute;
+    top: -3vw;
+    left: -8vw;
+    cursor: pointer;
+}
+
+.england{
+    width: 3.8vw;
+    position: absolute;
+    top: -2.9vw;
+    left: -4vw;
+    cursor: pointer;
 }

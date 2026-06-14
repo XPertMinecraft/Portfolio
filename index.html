@@ -12,24 +12,26 @@
 <body>
     <div class="box">
         <div class="left_block">
+            <img src="images/Ukraine.png" alt="Українська" class="ukraine" onclick="changeLang('uk')">
+            <img src="images/UnitedKingdom.png" alt="English" class="england" onclick="changeLang('en')">
             <div class="left_text">
                 <div class="about">
-                    <h1>Шаповал Кирило</h1>
-                    <h3>Фронтенд-розробник</h3>
-                    <p class="left_text_p">Я розроблю гарний, функціональний <br>
+                    <h1 lang="left_h1">Шаповал Кирило</h1>
+                    <h3 lang="left_h3">Фронтенд-розробник</h3>
+                    <p lang="left_text_p" class="left_text_p">Я розроблю гарний, функціональний <br>
                         сайт для Вас.</p>
                 </div>
                 <div class="sections">
                     <a href="#aboutMe">
                         <div class="section section1 active">
                             <hr>
-                            <p>ПРО МЕНЕ</p>
+                            <p lang="sec1">ПРО МЕНЕ</p>
                         </div>
                     </a>
                     <a href="#exp">
                         <div class="section section2">
                             <hr>
-                            <p>МОЇ РОБОТИ</p>
+                            <p lang="sec2">МОЇ РОБОТИ</p>
                         </div>
                     </a>
                     <!-- <div class="section section3">
@@ -94,7 +96,7 @@
         </div>
         <div class="right_block">
             <div class="about_me" id="aboutMe">
-                <p>
+                <p lang="about_me_p1">
                     Я - <span>фронтенд-розробник</span> із досвідом створення функціональних і візуально довершених
                     вебсайтів.
                     Особливу увагу приділяю якості реалізації, <span>гнучкості</span> рішень та <span>деталям</span>
@@ -103,7 +105,7 @@
                     сучасні та
                     ефективні цифрові продукти.
                 </p>
-                <p>
+                <p lang="about_me_p2">
                     Наразі я не працюю, проте <span>навчаюся</span> на профілі інформаційних технологій (ІТ) у
                     <span>Криворізькому
                         Покровському ліцеї</span> та здобуваю спеціальність фронтенд-розробника в Школі Комп'ютерної
@@ -112,7 +114,7 @@
                     розвиток у
                     цьому напрямі.
                 </p>
-                <p>
+                <p lang="about_me_p3">
                     Попри відсутність комерційного досвіду, я вже працював над <span>багатьма проєктами</span>, які
                     моделювали
                     реальні завдання та виклики, з якими стикаються веброзробники (усі роботи можна переглянути нижче в
@@ -122,7 +124,7 @@
                     допомогою
                     <span>Google Таблиць замість традиційної бази даних</span>.
                 </p>
-                <p>
+                <p lang="about_me_p4">
                     У вільний час <span>люблю читати, грати в шахи</span>, працювати над своїми сайтами (так, навіть в
                     вільний час).
                     Також <span>активно беру участь у громадських ініціативах</span> і допомагаю розвитку свого ліцею та
@@ -135,27 +137,27 @@
                         свого
                         ліцею</span>.
                 </p>
-                <h2>Мої навички:</h2>
-                <p>HTML5, CSS3, Responsive Design, JavaScript (ES6+), React, jQuery, Git, GitHub, Vite, npm, робота з
+                <h2 lang="my_skills">Мої навички:</h2>
+                <p lang="skills">HTML5, CSS3, Responsive Design, JavaScript (ES6+), React, jQuery, Git, GitHub, Vite, npm, робота з
                     REST API, основи роботи з базами даних, PHP (базовий рівень), SQL (базовий рівень).</p>
             </div>
             <div class="experience" id="exp">
                 <a href="https://xpertminecraft.github.io/Internet-shop/">
                     <div class="example">
-                        <div class="date">
+                        <div class="date" lang="date1">
                             березень 2026 - квітень 2026
                         </div>
-                        <h3>
+                        <h3 lang="name1">
                             Інтернет-магазин <span>↗</span>
                         </h3>
-                        <p>
+                        <p lang="des1">
                             Один з перших моїх сайтів створенний на React, а також найскладніший на мою думку. При
                             розробці було застосованно більшість моїх знань з веб-розробки, API Нової Пошти, кастомні
                             хуки, а також Google таблиця замість традиційної БД.
                         </p>
                         <div class="prog_lang">
                             <div class="lang">
-                                HTML & CSS
+                                HTML5 & CSS3
                             </div>
                             <div class="lang">
                                 React
@@ -165,13 +167,13 @@
                 </a>
                 <a href="https://xpertminecraft.github.io/BARBER/">
                     <div class="example">
-                        <div class="date">
+                        <div class="date" lang="date2">
                             квітень 2026 - травень 2026
                         </div>
                         <h3>
                             BARBER <span>↗</span>
                         </h3>
-                        <p>
+                        <p lang="des2">
                             Сайт барпершопу, створенний мною з нуля. Один з великих проєктів для практики фронтенд
                             розробики, який я створив. Для створення сайту я дуже часто викоритсовува JS, але жодної
                             бібліотеки. Таке рішення я прийняв, щоб мати якумога бульше практики з чистим JavaScript.
@@ -179,7 +181,7 @@
                         </p>
                         <div class="prog_lang">
                             <div class="lang">
-                                HTML & CSS
+                                HTML5 & CSS3
                             </div>
                             <div class="lang">
                                 JavaScript
@@ -201,7 +203,7 @@
                         </p>
                         <div class="prog_lang">
                             <div class="lang">
-                                HTML & CSS
+                                HTML5 & CSS3
                             </div>
                             <div class="lang">
                                 JavaScript
@@ -211,13 +213,13 @@
                 </a> -->
                 <a href="https://xpertminecraft.github.io/Cookie-Clicker/">
                     <div class="example">
-                        <div class="date">
+                        <div class="date" lang="date4">
                             жовтень 2025 - сьогодні
                         </div>
                         <h3>
                             Cookie Clicker <span>↗</span>
                         </h3>
-                        <p>
+                        <p lang="des4">
                             Моя персональна онлайн-копія відомої гри Cookie Cliker. Надзвичайно проста в дизайні, але
                             має досить складну логіку, написанну таким чином, що можна без проблем додавати будь-яку
                             кількість нового контенту. Вся логіка написанна на чистому JavaScript, а також HTML
@@ -225,7 +227,7 @@
                         </p>
                         <div class="prog_lang">
                             <div class="lang">
-                                HTML & CSS
+                                HTML5 & CSS3
                             </div>
                             <div class="lang">
                                 JavaScript
@@ -238,13 +240,13 @@
                 </a>
                 <a href="https://xpertminecraft.github.io/JQuery-practice/">
                     <div class="example">
-                        <div class="date">
+                        <div class="date" lang="date5">
                             жовтень 2025 - січень 2026
                         </div>
                         <h3>
                             JQuery practice <span>↗</span>
                         </h3>
-                        <p>
+                        <p lang="des5">
                             Сайт, де акцент зробленний на функціональності, а не дизайні. Всі рухомі елементи сайту
                             стали такими завдяки великому JS коду, а саме бібліотеці JQuery. Це досить відома
                             бібліотека, яку часту використовують для розширення можливостей JavaScript та покращення
@@ -262,19 +264,19 @@
                 </a>
                 <a href="https://xpertminecraft.github.io/Turist-web-site/">
                     <div class="example">
-                        <div class="date">
+                        <div class="date" lang="date6">
                             жовтень 2025 - листопад 2025
                         </div>
-                        <h3>
+                        <h3 lang="name6">
                             Туристичний сайт <span>↗</span>
                         </h3>
-                        <p>
+                        <p lang="des6">
                             Робота, яка імітує реальну задачу по створенню сайту. Весь фронтенд виконано в кращому
                             вигляді і, навіть, є заготовки для роботи бекенд розробника.
                         </p>
                         <div class="prog_lang">
                             <div class="lang">
-                                HTML & CSS
+                                HTML5 & CSS3
                             </div>
                             <div class="lang">
                                 JavaScript
@@ -283,7 +285,7 @@
                     </div>
                 </a>
 
-                <h2>View Full Resume <span>↗</span></h2>
+                <h2 lang="resume">Переглянути повне резюме <span>↗</span></h2>
             </div>
             <!-- <div class="projects">
 
