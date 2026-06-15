@@ -28,6 +28,8 @@ const translations = {
         name6: "Туристичний сайт <span>↗</span>",
         des6: "Робота, яка імітує реальну задачу по створенню сайту. Весь фронтенд виконано в кращому вигляді і, навіть, є заготовки для роботи бекенд розробника.",
         resume: "Переглянути повне резюме <span>↗</span>",
+        about_h3: "ПРО МЕНЕ",
+        exp_h3: "РОБОТИ",
     },
     en: {
         left_h1: "Kirill Shapoval",
@@ -54,6 +56,8 @@ const translations = {
         name6: "Tourist site <span>↗</span>",
         des6: "A job that simulates the real task of creating a website. The entire frontend is done in the best possible way and even serves as the basis for the backend developer's work.",
         resume: "View Full Resume <span>↗</span>",
+        about_h3: "ABOUT",
+        exp_h3: "EXPERIENCE",
     }
 };
 
