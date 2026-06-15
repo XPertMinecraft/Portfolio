@@ -36,7 +36,6 @@
 }
 
 .left_block h1 {
-    max-width: 80%;
     font-size: clamp(0.1rem, 4vw, 4rem);
     height: auto;
     color: rgb(226, 232, 240);
@@ -248,7 +247,7 @@ a {
     cursor: pointer;
 }
 
-.exp_h3{
+.exp_h3 {
     padding-left: 1vw;
     font-size: clamp(0.9rem, 1vw, 1rem);
     margin-bottom: -10vw;
@@ -257,7 +256,7 @@ a {
 }
 
 
-.about_h3{
+.about_h3 {
     font-size: clamp(0.9rem, 1vw, 1rem);
     color: rgb(226, 232, 240);
     display: none;
@@ -305,7 +304,7 @@ a {
     }
 }
 
-@media screen and (width>=320px) and (width<=420px) {
+@media screen and (width>=320px) and (width<1024px) {
     .box {
         flex-direction: column;
         padding: 15.5vw 5vw 10vw 5vw;
@@ -362,7 +361,7 @@ a {
         width: 9vw;
     }
 
-    .social_media a:active svg{
+    .social_media a:active svg {
         fill: rgb(84, 211, 212);
     }
 
@@ -388,7 +387,7 @@ a {
         gap: 15vw;
     }
 
-    .experience h2:active span{
+    .experience h2:active span {
         margin-left: 0.5vw;
         transition: 0.3s;
     }
@@ -397,7 +396,7 @@ a {
         flex-wrap: nowrap;
     }
 
-    .example:active{
+    .example:active {
         background: rgba(23, 31, 50);
     }
 
@@ -413,7 +412,7 @@ a {
         margin-bottom: 3vw;
     }
 
-    .example:active h3{
+    .example:active h3 {
         color: rgb(81, 201, 205);
     }
 
@@ -422,8 +421,8 @@ a {
         font-size: clamp(1rem, 1.7vw, 2rem);
         margin-bottom: 7vw;
     }
-    
-    .example:active span{
+
+    .example:active span {
         padding: 0 0 10px 5px;
         transition: 0.15s;
     }
@@ -441,33 +440,131 @@ a {
         font-size: clamp(1rem, 2vw, 2rem);
     }
 
-    .experience h2:active{
+    .experience h2:active {
         color: rgba(94, 234, 207);
     }
 
-    .shiny_block{
+    .shiny_block {
         display: none;
     }
 
-    .exp_h3{
+    .exp_h3 {
         display: flex;
     }
 
-    .about_h3{
+    .about_h3 {
         display: flex;
     }
 
-    .ukraine{
+    .ukraine {
         width: 11.5vw;
         height: 7.5vw;
         top: 3vw;
         left: 5vw;
     }
 
-    .england{
+    .england {
         width: 11.5vw;
         height: 7.3vw;
         top: 3.3vw;
         left: 19.5vw;
+    }
+}
+
+@media screen and (width>428px) and (width<1024px) {
+    .about_h3 {
+        font-size: clamp(1rem, 3vw, 3rem);
+    }
+
+    .exp_h3 {
+        font-size: clamp(1rem, 3vw, 3rem);
+        padding-left: 1.5vw;
+        margin-bottom: -7vw;
+    }
+
+    .experience {
+        gap: 10vw;
+    }
+
+    .date {
+        font-size: clamp(1rem, 0.8vw, 2rem);
+    }
+
+    .example h3 {
+        font-size: clamp(1rem, 4vw, 2rem);
+        margin-bottom: 2vw;
+    }
+
+    .example p {
+        font-size: clamp(1rem, 2.5vw, 2rem);
+        margin-bottom: 5vw;
+    }
+
+    .lang {
+        font-size: clamp(1rem, 2.5vw, 2rem);
+        padding: 1.5vw 3vw 1.5vw 3vw;
+    }
+
+    .experience h2 {
+        font-size: clamp(1.5rem, 3vw, 4rem);
+    }
+}
+
+@media screen and (width>1900px) {
+    .box {
+        padding: 10vh 20vw 10vh 20vw;
+    }
+
+    .left_block h1 {
+        min-height: 3vw;
+    }
+
+    .left_block h3 {
+        font-size: clamp(1rem, 2.5vw, 2.5rem);
+    }
+
+    .left_text_p {
+        font-size: clamp(1rem, 1.2vw, 2rem);
+    }
+
+    .section p {
+        font-size: clamp(1rem, 2vw, 1.4rem);
+    }
+
+    .about_me p {
+        font-size: clamp(1rem, 2vw, 2rem);
+    }
+
+    .about_me h2 {
+        font-size: clamp(1rem, 3vw, 3.3rem);
+    }
+
+    .date {
+        font-size: clamp(1rem, 1vw, 1.4rem);
+    }
+
+    .example h3 {
+        font-size: clamp(1rem, 4vw, 3rem);
+    }
+
+    .example p {
+        font-size: clamp(1rem, 3vw, 2rem);
+    }
+
+    .lang {
+        border-radius: 25px;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+    }
+
+    .experience h2 {
+        font-size: clamp(1rem, 2vw, 2.4rem)
+    }
+
+    .ukraine {
+        left: 0;
+    }
+
+    .england {
+        left: 4vw;
     }
 }
