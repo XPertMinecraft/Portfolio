@@ -31,7 +31,7 @@
     height: 50%;
 }
 
-.left_text a{
+.left_text a {
     width: 10vw;
 }
 
@@ -39,7 +39,7 @@
     max-width: 80%;
     font-size: clamp(0.1rem, 4vw, 4rem);
     height: auto;
-    color: rgb(196, 208, 236);
+    color: rgb(226, 232, 240);
     min-height: 5vw;
     max-height: 10vw;
 }
@@ -47,7 +47,7 @@
 .left_block h3 {
     font-size: clamp(0.1rem, 1.5vw, 2rem);
     height: 2vw;
-    color: rgb(197, 209, 236);
+    color: rgb(226, 232, 240);
 }
 
 .left_text_p {
@@ -66,10 +66,6 @@
     gap: 1.5vw;
 }
 
-.social_media a:hover svg {
-    fill: rgb(84, 211, 212);
-}
-
 .section {
     width: 100%;
     height: 3.7vw;
@@ -86,16 +82,6 @@
     width: 15%;
     border: 0.01vw solid rgba(91, 111, 148);
     transition: 0.3s;
-}
-
-.section:hover {
-    color: white;
-}
-
-.section:hover hr {
-    width: 35%;
-    border-color: white;
-    border-width: 0.05vw;
 }
 
 .right_block {
@@ -131,13 +117,13 @@
 }
 
 .about_me span {
-    color: rgb(196, 208, 236);
+    color: rgb(226, 232, 240);
     font-weight: bold;
 }
 
-.about_me h2{
+.about_me h2 {
     font-size: clamp(0.1rem, 2vw, 2rem);
-    color: rgb(196, 208, 236);
+    color: rgb(226, 232, 240);
     margin-top: 2vw;
 }
 
@@ -161,14 +147,6 @@
     cursor: pointer;
 }
 
-.example:hover {
-    background: rgba(23, 31, 50);
-}
-
-.example:hover h3 {
-    color: rgb(81, 201, 205);
-}
-
 .date {
     width: 7.5vw;
     height: 100%;
@@ -177,7 +155,7 @@
 
 .example h3 {
     margin-bottom: 0.7vw;
-    color: rgb(196, 208, 236);
+    color: rgb(226, 232, 240);
     font-size: clamp(0.1rem, 2vw, 1.5rem);
 }
 
@@ -208,20 +186,6 @@
     font-size: clamp(0.1rem, 1.2vw, 1.2rem);
     color: white;
     cursor: pointer;
-}
-
-.experience h2:hover {
-    color: rgba(94, 234, 207);
-}
-
-.example:hover span {
-    padding: 0 0 10px 5px;
-    transition: 0.15s;
-}
-
-.experience h2:hover span {
-    margin-left: 0.5vw;
-    transition: 0.3s;
 }
 
 a {
@@ -258,17 +222,17 @@ a {
     border-radius: 100%;
 }
 
-.section.active{
+.section.active {
     color: white;
 }
 
-.section.active hr{
+.section.active hr {
     width: 35%;
     border-color: white;
     border-width: 0.05vw;
 }
 
-.ukraine{
+.ukraine {
     width: 3vw;
     position: absolute;
     top: -3vw;
@@ -276,10 +240,220 @@ a {
     cursor: pointer;
 }
 
-.england{
+.england {
     width: 3.8vw;
     position: absolute;
     top: -2.9vw;
     left: -4vw;
     cursor: pointer;
+}
+
+.exp_h3{
+    padding-left: 1vw;
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    margin-bottom: -10vw;
+    color: rgb(226, 232, 240);
+    display: none;
+}
+
+
+.about_h3{
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    color: rgb(226, 232, 240);
+    display: none;
+}
+
+
+
+
+
+@media (hover: hover) {
+    .experience h2:hover {
+        color: rgba(94, 234, 207);
+    }
+
+    .example:hover span {
+        padding: 0 0 10px 5px;
+        transition: 0.15s;
+    }
+
+    .experience h2:hover span {
+        margin-left: 0.5vw;
+        transition: 0.3s;
+    }
+
+    .example:hover {
+        background: rgba(23, 31, 50);
+    }
+
+    .example:hover h3 {
+        color: rgb(81, 201, 205);
+    }
+
+    .social_media a:hover svg {
+        fill: rgb(84, 211, 212);
+    }
+
+    .section:hover {
+        color: white;
+    }
+
+    .section:hover hr {
+        width: 35%;
+        border-color: white;
+        border-width: 0.05vw;
+    }
+}
+
+@media screen and (width>=320px) and (width<=420px) {
+    .box {
+        flex-direction: column;
+        padding: 10vw 5vw 10vw 5vw;
+    }
+
+    .left_block {
+        width: 100%;
+        height: auto;
+        position: static;
+        justify-content: flex-start;
+        padding-bottom: 3vw;
+        margin-bottom: 15vw;
+    }
+
+    .left_text {
+        height: auto;
+        margin-bottom: 10vw;
+    }
+
+    .left_block h1 {
+        max-width: 100%;
+        font-size: clamp(1rem, 9.6vw, 10rem);
+        margin-bottom: 4vw;
+    }
+
+    .left_block h3 {
+        font-size: clamp(1rem, 5vw, 5rem);
+        height: auto;
+        margin-bottom: 6vw;
+    }
+
+    .left_text_p {
+        font-size: clamp(0.5rem, 4.7vw, 3rem);
+        height: auto;
+    }
+
+    .section {
+        display: none;
+    }
+
+    .left_text_p {
+        margin: 0;
+    }
+
+    .social_media {
+        gap: 3vw;
+    }
+
+    .social_media svg {
+        width: 7vw;
+    }
+
+    .social_media .small {
+        width: 9vw;
+    }
+
+    .social_media a:active svg{
+        fill: rgb(84, 211, 212);
+    }
+
+    .right_block {
+        width: 100%;
+    }
+
+    .about_me {
+        gap: 5vw;
+    }
+
+    .about_me p {
+        font-size: clamp(1rem, 4vw, 4rem);
+    }
+
+    .about_me h2 {
+        font-size: clamp(1rem, 7vw, 5rem);
+        margin-top: 8vw;
+    }
+
+    .experience {
+        margin-top: 20vw;
+        gap: 15vw;
+    }
+
+    .experience h2:active span{
+        margin-left: 0.5vw;
+        transition: 0.3s;
+    }
+
+    .example {
+        flex-wrap: nowrap;
+    }
+
+    .example:active{
+        background: rgba(23, 31, 50);
+    }
+
+    .date {
+        width: 100%;
+        height: auto;
+        font-size: clamp(0.7rem, 1vw, 1rem);
+    }
+
+    .example h3 {
+        font-size: clamp(1rem, 6vw, 3rem);
+        font-weight: normal;
+        margin-bottom: 3vw;
+    }
+
+    .example:active h3{
+        color: rgb(81, 201, 205);
+    }
+
+    .example p {
+        width: 100%;
+        font-size: clamp(1rem, 1.7vw, 2rem);
+        margin-bottom: 7vw;
+    }
+    
+    .example:active span{
+        padding: 0 0 10px 5px;
+        transition: 0.15s;
+    }
+
+    .prog_lang {
+        width: 100%;
+    }
+
+    .lang {
+        font-size: clamp(0.8rem, 0.7vw, 1.2rem);
+        padding: 2vw 4vw 2vw 4vw;
+    }
+
+    .experience h2 {
+        font-size: clamp(1rem, 2vw, 2rem);
+    }
+
+    .experience h2:active{
+        color: rgba(94, 234, 207);
+    }
+
+    .shiny_block{
+        display: none;
+    }
+
+    .exp_h3{
+        display: flex;
+    }
+
+    .about_h3{
+        display: flex;
+    }
 }
