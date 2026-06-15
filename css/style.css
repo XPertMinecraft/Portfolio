@@ -559,12 +559,4 @@ a {
     .experience h2 {
         font-size: clamp(1rem, 2vw, 2.4rem)
     }
-
-    .ukraine {
-        left: 0;
-    }
-
-    .england {
-        left: 4vw;
-    }
 }
