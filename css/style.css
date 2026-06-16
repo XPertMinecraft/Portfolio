@@ -65,6 +65,10 @@
     gap: 1.5vw;
 }
 
+.social_media p{
+    font-size: clamp(0.1rem, 1.2vw, 1.4rem);
+}
+
 .section {
     width: 100%;
     height: 3.7vw;
@@ -361,6 +365,10 @@ a {
         width: 9vw;
     }
 
+    .social_media p{
+        font-size: 4vw;
+    }
+
     .social_media a:active svg {
         fill: rgb(84, 211, 212);
     }
@@ -482,6 +490,10 @@ a {
         margin-bottom: -7vw;
     }
 
+    .social_media p{
+        font-size: 4vw;
+    }
+
     .experience {
         gap: 10vw;
     }
@@ -529,6 +541,10 @@ a {
 
     .section p {
         font-size: clamp(1rem, 2vw, 1.4rem);
+    }
+
+    .social_media p{
+        font-size: 1.3vw;
     }
 
     .about_me p {
